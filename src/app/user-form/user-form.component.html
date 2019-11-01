@@ -1,0 +1,53 @@
+<div class="container" [formGroup]="userForm" *ngIf="userForm">
+
+  <div class="row">
+    <div class="col-md-12 d-flex justify-content-center my-5">
+      <h2>Registration Form</h2>
+    </div>
+    <!-- first name -->
+    <div class="col-md-4 d-flex justify-content-end">
+      <label>First Name</label>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <input type="text" class="form-control mb-3" formControlName="firstName">
+    </div>
+
+    <!-- middle name -->
+    <div class="col-md-4 d-flex justify-content-end">
+      <label>Middle Name</label>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <input type="text" class="form-control mb-3" formControlName="middleName">
+    </div>
+
+    <!-- last name -->
+    <div class="col-md-4 d-flex justify-content-end">
+      <label>Last Name</label>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <input type="text" class="form-control mb-3" formControlName="lastName">
+    </div>
+
+    <!-- email -->
+    <div class="col-md-4 d-flex justify-content-end">
+      <label>Email</label>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <input type="text" class="form-control mb-3" formControlName="email">
+    </div>
+
+    <!-- phone -->
+    <div class="col-md-4 d-flex justify-content-end">
+      <label>Phone No.</label>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+      <input type="text" class="form-control mb-3" formControlName="phone">
+    </div>
+   
+    <!-- Submit -->
+    <div class="col-md-12 d-flex justify-content-center my-5">
+      <button class="btn btn-primary px-4" (click)="submit()">Submit</button>
+    </div>
+  </div>
+
+</div>
